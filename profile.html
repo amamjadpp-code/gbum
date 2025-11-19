@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Fitness Tracker</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Workout</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container profile-container">
+        <h1>Profile</h1>
+
+        <div class="profile-grid">
+            <div class="profile-card" id="statistics">
+                <h2>Statistics</h2>
+                <div id="stats-content"></div>
+            </div>
+            <div class="profile-card" id="exercises-summary">
+                <h2>Exercises</h2>
+                <div id="exercises-content"></div>
+            </div>
+            <div class="profile-card" id="measures">
+                <h2>Measures</h2>
+                <div id="measures-content"></div>
+                <div class="form-group">
+                    <input type="text" id="measure-name" placeholder="Measurement (e.g., Weight)">
+                    <input type="number" id="measure-value" placeholder="Value">
+                    <button id="add-measure">Add Measure</button>
+                </div>
+            </div>
+            <div class="profile-card" id="calendar">
+                <h2>Calendar</h2>
+                <div id="calendar-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
