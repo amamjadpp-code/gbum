@@ -9,11 +9,28 @@
 <body>
     <div class="container">
         <h1>Fitness Tracker</h1>
+
+        <div class="form-group">
+            <label for="exercise-select">Choose an exercise:</label>
+            <select id="exercise-select"></select>
+            <button id="add-exercise">Add Exercise</button>
+        </div>
+
         <div id="exercises">
             <!-- Exercise logs will be added here -->
         </div>
-        <button id="add-exercise">Add Exercise</button>
+
+        <div id="timer">
+            <h2>Rest Timer</h2>
+            <div id="timer-display">00:00</div>
+        </div>
+
         <button id="save-workout">Save Workout</button>
+
+        <div id="workout-history">
+            <h2>Workout History</h2>
+            <ul id="history-list"></ul>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
